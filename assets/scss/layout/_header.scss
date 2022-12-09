@@ -1,0 +1,130 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  &-content {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+  }
+
+  &-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    span {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      color: $color-white-50;
+    }
+  }
+
+  &-links {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    &__social {
+      max-width: 30px;
+      height: 27px;
+
+      &-icon {
+        width: 27px;
+        height: 27px;
+        fill: $color-white-50;
+        transition: .6s all;
+
+        &:hover {
+          fill: $color-blue-700;
+        }
+      }
+    }
+  }
+
+  &-buttons {
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    &__language {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      button {
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px;
+        color: $color-white-50;
+        transition: .6s all;
+
+        &:hover {
+          color: $color-blue-700;
+        }
+      }
+    }
+
+    a {
+      border: 1px solid $color-white-50;
+      border-radius: 30px;
+      padding: 5px 41px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 22px;
+      color: $color-white-50;
+      transition: .6s all;
+
+      &:hover {
+        background: $color-blue-700;
+        border: 1px solid $color-blue-700;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .header {
+    padding: 20px 20px;
+
+    &-links{
+      margin-right: auto;
+    }
+    
+    &-buttons {
+      margin-left: 20px;
+      flex-direction: column-reverse;
+      gap: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header {
+    padding: 20px 20px;
+
+    &-logo{
+      span{
+        font-size: 14px;
+      }
+    }
+
+    &-links{
+      display: none;
+    }
+
+    &-buttons {
+      margin-left: auto;
+
+      a{
+        padding: 5px 30px;
+      }
+    }
+  }
+}
