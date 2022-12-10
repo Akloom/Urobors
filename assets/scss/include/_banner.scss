@@ -1,0 +1,53 @@
+.banner {
+  border-bottom: 1px solid $color-white-300;
+  margin-top: 50px;
+
+  &-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-family: 'Rubik';
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 53px;
+        color: $color-white-50;
+        max-width: 610px;
+      }
+
+      p {
+        margin-top: 21px;
+        max-width: 442px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: $color-white-50;
+      }
+
+      a {
+        margin-top: 43px;
+        width: max-content;
+        padding: 17px 120px;
+        box-shadow: 3px 3px 10px $color-light-blue-100;
+        border-radius: 30px;
+        background: $color-blue-700;
+        border: 1px solid $color-blue-700;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        color: $color-white-50;
+        transition: .6s all;
+
+        &:hover{
+          background: $color-white-50;
+          color: $color-blue-700;
+        }
+      }
+    }
+  }
+}
