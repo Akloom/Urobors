@@ -209,6 +209,8 @@
   flex-direction: row-reverse;
   flex-wrap: wrap;
   gap: 89px;
+  padding-bottom: 65px;
+  border-bottom: 1px solid #E0E0E0;
 }
 .referral-info {
   display: flex;
@@ -228,8 +230,10 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+  color: #4F4F4F;
 }
 .referral-image {
+  margin-right: auto;
   max-width: 420px;
 }
 .referral-image img {
@@ -238,16 +242,17 @@
 
 @media screen and (max-width: 920px) {
   .referral {
-    padding: 0 20px;
+    padding: 40px 20px;
+    gap: 30px;
   }
   .referral-info {
     gap: 10px;
   }
+  .referral-image {
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 500px) {
-  .referral {
-    gap: 40px;
-  }
   .referral-info {
     gap: 10px;
   }
@@ -258,6 +263,184 @@
   .referral-info p {
     font-size: 14px;
     line-height: 20px;
+  }
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.plan {
+  margin-top: 87px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 60px;
+}
+.plan-title {
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: #29246A;
+}
+.plan-card {
+  width: 235px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background: #FFFFFF;
+  box-shadow: 2px 4px 30px #C2C2FC;
+  border-radius: 5px;
+  transition: 0.6s all;
+}
+.plan-card__category {
+  padding: 30px 0 40px 0;
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  background: #87B9FA;
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #FFFFFF;
+  transition: 0.6s all;
+}
+.plan-card__info {
+  margin-top: 27px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.plan-card__info-percent {
+  max-width: 235px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: #4D92EB;
+  transition: 0.6s all;
+}
+.plan-card__info-supreme {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #4D92EB;
+  transition: 0.6s all;
+}
+.plan-card__info-time {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #4F4F4F;
+}
+.plan-card__info-more {
+  margin-top: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.plan-card__info-more span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #4F4F4F;
+}
+.plan-card__info-more__icon {
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+  background: #97C1F7;
+  border-radius: 50%;
+  fill: #FFFFFF;
+}
+.plan-card a {
+  margin-top: 30px;
+  margin-bottom: 31px;
+  display: inline-block;
+  padding: 10px 58px;
+  border: 1px solid #29246A;
+  border-radius: 30px;
+  background: #29246A;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  transition: 0.6s all;
+}
+.plan-card a:hover {
+  background: #FFFFFF;
+  color: #29246A;
+}
+
+.plan-card:hover .plan-card__category {
+  background: #B93CE8;
+}
+
+.plan-card:hover .plan-card__info-percent {
+  color: #B93CE8;
+}
+
+.plan-card:hover .plan-card__info-supreme {
+  color: #B93CE8;
+}
+
+@media screen and (max-width: 920px) {
+  .plan {
+    padding: 0 20px;
+    margin-top: 50px;
+    gap: 40px;
+  }
+  .plan-title {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .plan {
+    padding: 0 20px;
+    margin-top: 40px;
+    gap: 30px;
+  }
+  .plan-title {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .plan {
+    padding: 0 20px;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  .plan-title {
+    font-size: 24px;
   }
 }
 

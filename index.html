@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Uroboros Investment</title>
 </head>
@@ -12,45 +13,43 @@
 <body>
 
   <div class="wrapper">
-    <div class="bg">
-      <header class="header bg">
-        <div class="header-content container">
-          <a href="./index.html" class="header-logo">
-            <img src="./assets/img/icons/header-logo.svg" alt="">
-            <span>Uroboros Investment</span>
+    <header class="header bg">
+      <div class="header-content container">
+        <a href="./index.html" class="header-logo">
+          <img src="./assets/img/icons/header-logo.svg" alt="">
+          <span>Uroboros Investment</span>
+        </a>
+        <div class="header-links">
+          <a href="" class="header-links__social">
+            <svg class="header-links__social-icon">
+              <use href="./assets/img/icons/svg-sprites.svg#instagram-icon"></use>
+            </svg>
           </a>
-          <div class="header-links">
-            <a href="" class="header-links__social">
-              <svg class="header-links__social-icon">
-                <use href="./assets/img/icons/svg-sprites.svg#instagram-icon"></use>
-              </svg>
-            </a>
-            <a href="" class="header-links__social">
-              <svg class="header-links__social-icon">
-                <use href="./assets/img/icons/svg-sprites.svg#telegram-icon"></use>
-              </svg>
-            </a>
-          </div>
-          <div class="header-buttons">
-            <div class="header-buttons__language">
-              <button>EN</button>
-              <button>RUS</button>
-              <button>UKR</button>
-            </div>
-            <a href="">Войти</a>
-          </div>
+          <a href="" class="header-links__social">
+            <svg class="header-links__social-icon">
+              <use href="./assets/img/icons/svg-sprites.svg#telegram-icon"></use>
+            </svg>
+          </a>
         </div>
-      </header>
-
-      <section class="banner">
-        <div class="banner-content container">
-          <div class="banner-content__info">
-            <h1>Инвестируйте с помощью Uroboros Investment</h1>
-            <p>Без открытия юр. лица и с гарантией замены аккаунта в случае блокировки по нашей вине</p>
-            <a href="">Регистрация</a>
+        <div class="header-buttons">
+          <div class="header-buttons__language">
+            <button>EN</button>
+            <button>RUS</button>
+            <button>UKR</button>
           </div>
-      </section>
-    </div>
+          <a href="">Войти</a>
+        </div>
+      </div>
+    </header>
+<!-- 
+    <section class="banner bg">
+      <div class="banner-content container">
+        <div class="banner-content__info">
+          <h1>Инвестируйте с помощью Uroboros Investment</h1>
+          <p>Без открытия юр. лица и с гарантией замены аккаунта в случае блокировки по нашей вине</p>
+          <a href="">Регистрация</a>
+        </div>
+    </section> -->
 
     <section class="referral container">
       <div class="referral-info">
@@ -63,8 +62,82 @@
         <img src="./assets/img/images/referral-image.png" alt="">
       </div>
     </section>
+
+    <section class="plan container">
+      <h1 class="plan-title">Выберите свой план</h1>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="plan-card">
+              <h1 class="plan-card__category">AVERAGE</h1>
+              <div class="plan-card__info">
+                <h2 class="plan-card__info-percent">0.25%</h2>
+                <span class="plan-card__info-time">в день</span>
+                <button class="plan-card__info-more">
+                  <span>Полные условия</span>
+                  <svg class="plan-card__info-more__icon">
+                    <use href="./assets/img/icons/svg-sprites.svg#arrow-down"></use>
+                  </svg>
+                </button>
+              </div>
+              <a href="#" class="plan-card__btn">Выбрать</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="plan-card">
+              <h1 class="plan-card__category">ELEVATED</h1>
+              <div class="plan-card__info">
+                <h2 class="plan-card__info-percent">0.33%</h2>
+                <span class="plan-card__info-time">в день</span>
+                <button class="plan-card__info-more">
+                  <span>Полные условия</span>
+                  <svg class="plan-card__info-more__icon">
+                    <use href="./assets/img/icons/svg-sprites.svg#arrow-down"></use>
+                  </svg>
+                </button>
+              </div>
+              <a href="#" class="plan-card__btn">Выбрать</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="plan-card">
+              <h1 class="plan-card__category">UPPER</h1>
+              <div class="plan-card__info">
+                <h2 class="plan-card__info-percent">0.49%</h2>
+                <span class="plan-card__info-time">в день</span>
+                <button class="plan-card__info-more">
+                  <span>Полные условия</span>
+                  <svg class="plan-card__info-more__icon">
+                    <use href="./assets/img/icons/svg-sprites.svg#arrow-down"></use>
+                  </svg>
+                </button>
+              </div>
+              <a href="#" class="plan-card__btn">Выбрать</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="plan-card">
+              <h1 class="plan-card__category">SUPREME</h1>
+              <div class="plan-card__info">
+                <h2 class="plan-card__info-supreme">ИНДИВИДУАЛЬНЫЕ УСЛОВИЯ</h2>
+                <span class="plan-card__info-time">в день</span>
+                <button class="plan-card__info-more">
+                  <span>Полные условия</span>
+                  <svg class="plan-card__info-more__icon">
+                    <use href="./assets/img/icons/svg-sprites.svg#arrow-down"></use>
+                  </svg>
+                </button>
+              </div>
+              <a href="#" class="plan-card__btn">Выбрать</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 
