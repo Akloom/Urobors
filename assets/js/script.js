@@ -27,3 +27,11 @@ var swiper = new Swiper(".mySwiper", {
     },
   }
 });
+
+let question = document.querySelectorAll('.faq-content__info');
+
+    for (let i = 0; i < question.length; i++) {
+      question[i].addEventListener('click', () => {
+        question[i].classList.toggle('active');
+      })
+    }
