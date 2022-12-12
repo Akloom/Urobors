@@ -621,13 +621,9 @@
   color: #FFFFFF;
 }
 
-.faq-content__info.active {
-  gap: 20px;
-  transition: 0.6s all;
-}
-
 .faq-content__info.active .faq-content__info-answer {
   max-height: 600px;
+  padding-top: 20px;
 }
 
 .faq-content__info.active .faq-content__info-question__btn span::before {
@@ -655,6 +651,103 @@
   }
   .faq-content__info-question h3 {
     font-size: 18px;
+  }
+}
+.contact-us {
+  margin-top: 130px;
+  padding-bottom: 150px;
+}
+.contact-us-content {
+  padding: 70px 0 0 70px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 75px;
+  background: #FFFFFF;
+}
+.contact-us-content__info {
+  display: flex;
+  flex-direction: column;
+}
+.contact-us-content__info h2 {
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #29246A;
+}
+.contact-us-content__info p {
+  margin-top: 21px;
+  max-width: 700px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #4F4F4F;
+}
+.contact-us-content__info a {
+  position: relative;
+  width: max-content;
+  margin-top: 41px;
+  display: inline-block;
+  padding: 18px 75px;
+  border-radius: 30px;
+  background: linear-gradient(233.48deg, #F9A85D 12.64%, #FE5C73 107.8%);
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+.contact-us-content__info a::before {
+  position: absolute;
+  content: "";
+  background: #FFFFFF;
+  width: 8px;
+  top: 0;
+  bottom: 0;
+  left: -32px;
+  transform: rotate(-16deg);
+  filter: blur(6px);
+}
+.contact-us-content__info a:hover::before {
+  left: calc(100% + 32px);
+  transition: 0.6s all;
+}
+.contact-us-image {
+  margin-left: auto;
+  max-width: 488px;
+}
+.contact-us-image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 920px) {
+  .contact-us {
+    margin-top: 65px;
+    padding-bottom: 75px;
+  }
+  .contact-us-content {
+    padding: 70px 20px 0 20px;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .contact-us-content__info h2 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .contact-us-image {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 520px) {
+  .contact-us-content__info h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .contact-us-content__info a {
+    font-size: 14px;
+    padding: 18px 40px;
   }
 }
 

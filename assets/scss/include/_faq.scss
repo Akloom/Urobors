@@ -102,13 +102,9 @@
   }
 }
 
-.faq-content__info.active {
-  gap: 20px;
-  transition: .6s all;
-}
-
 .faq-content__info.active .faq-content__info-answer {
   max-height: 600px;
+  padding-top: 20px;
 }
 
 .faq-content__info.active .faq-content__info-question__btn {

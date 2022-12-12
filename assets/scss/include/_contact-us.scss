@@ -1,0 +1,121 @@
+.contact-us {
+  margin-top: 130px;
+  padding-bottom: 150px;
+
+  &-content {
+    padding: 70px 0 0 70px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+    background: $color-white-50;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        font-family: 'Rubik';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        color: $color-blue-700;
+      }
+
+      p {
+        margin-top: 21px;
+        max-width: 700px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: $color-white-700;
+      }
+
+      a {
+        position: relative;
+        width: max-content;
+        margin-top: 41px;
+        display: inline-block;
+        padding: 18px 75px;
+        border-radius: 30px;
+        background: $color-bg-orange;
+        text-align: center;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: $color-white-50;
+
+        &::before {
+          position: absolute;
+          content: '';
+          background: $color-white-50;
+          width: 8px;
+          top: 0;
+          bottom: 0;
+          left: -32px;
+          transform: rotate(-16deg);
+          filter: blur(6px);
+        }
+
+        &:hover::before {
+          left: calc(100% + 32px);
+          transition: .6s all;
+        }
+      }
+    }
+  }
+
+  &-image {
+    margin-left: auto;
+    max-width: 488px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .contact-us {
+    margin-top: 65px;
+    padding-bottom: 75px;
+
+    &-content {
+      padding: 70px 20px 0 20px;
+      flex-direction: column;
+      gap: 50px;
+
+      &__info {
+        h2 {
+          font-size: 36px;
+          line-height: 40px;
+        }
+      }
+    }
+
+    &-image {
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .contact-us {
+
+    &-content {
+
+      &__info {
+        h2 {
+          font-size: 24px;
+          line-height: 30px;
+        }
+
+        a {
+          font-size: 14px;
+          padding: 18px 40px;
+        }
+      }
+    }
+  }
+}
