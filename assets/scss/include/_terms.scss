@@ -1,0 +1,116 @@
+.terms {
+  margin-top: 215px;
+
+  &-content {
+    padding: 30px 60px 30px 20px;
+    border: 1px solid $color-light-blue-50;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 31px;
+
+      h2 {
+        font-family: 'Rubik';
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 43px;
+        color: $color-blue-700;
+      }
+
+      a {
+        position: relative;
+        width: max-content;
+        margin-top: 41px;
+        display: inline-block;
+        padding: 18px 75px;
+        border-radius: 30px;
+        background: $color-bg-orange;
+        text-align: center;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: $color-white-50;
+
+        &::before {
+          position: absolute;
+          content: '';
+          background: $color-white-50;
+          width: 8px;
+          top: 0;
+          bottom: 0;
+          left: -32px;
+          transform: rotate(-16deg);
+          filter: blur(6px);
+        }
+
+        &:hover::before {
+          left: calc(100% + 32px);
+          transition: .6s all;
+        }
+      }
+    }
+
+    &__image {
+      margin-right: auto;
+      max-width: 492px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .terms {
+    margin-top: 65px;
+    padding: 0 20px;
+
+    &-content {
+      justify-content: center;
+      padding: 30px 20px 0 20px;
+      flex-direction: column;
+      gap: 20px;
+
+      &__info {
+        h2 {
+          font-size: 36px;
+          line-height: 40px;
+        }
+
+        a{
+          margin: 0;
+        }
+      }
+    }
+
+    &-image {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .terms {
+
+    &-content {
+
+      &__info {
+        h2 {
+          font-size: 24px;
+          line-height: 30px;
+        }
+
+        a {
+          font-size: 14px;
+          padding: 18px 40px;
+        }
+      }
+    }
+  }
+}
