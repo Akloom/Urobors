@@ -148,7 +148,7 @@
   .header-buttons {
     margin-left: auto;
   }
-  .header-buttons a {
+  .header-buttons__btn {
     padding: 5px 30px;
   }
 }
