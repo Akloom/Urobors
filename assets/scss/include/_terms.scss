@@ -1,5 +1,18 @@
 .terms {
   margin-top: 215px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 462px;
+    height: 462px;
+    top: -150px;
+    right: 0px;
+    background: $color-white-100;
+    border-radius: 50%;
+    z-index: -99;
+  }
 
   &-content {
     padding: 30px 60px 30px 20px;
@@ -8,6 +21,7 @@
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
+    background: $color-white-50;
 
     &__info {
       display: flex;
@@ -71,6 +85,10 @@
     margin-top: 65px;
     padding: 0 20px;
 
+    &::before{
+      display: none;
+    }
+
     &-content {
       justify-content: center;
       padding: 30px 20px 0 20px;
@@ -83,14 +101,14 @@
           line-height: 40px;
         }
 
-        a{
+        a {
           margin: 0;
         }
       }
-    }
 
-    &-image {
-      margin-right: 0;
+      &__image {
+        margin-right: 0;
+      }
     }
   }
 }
