@@ -30,7 +30,16 @@
   object-fit: cover;
 }
 
+.swiper-wrapper {
+  height: 450px;
+}
 
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
+}
 
 .plan {
   margin-top: 87px;
@@ -50,6 +59,7 @@
 
   &-card {
     width: 235px;
+    height: 385px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -70,6 +80,21 @@
       line-height: 30px;
       color: $color-white-50;
       transition: .6s all;
+      overflow: hidden;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -30px;
+        background: #fff;
+        transform: rotate(-7deg);
+        width: 200%;
+        height: 60px;
+        z-index: 999;
+      }
     }
 
     &__info {
