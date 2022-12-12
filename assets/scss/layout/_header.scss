@@ -57,8 +57,7 @@
       align-items: center;
       gap: 15px;
 
-      button {
-        cursor: pointer;
+      &-choose {
         font-weight: 400;
         font-size: 12px;
         line-height: 22px;
@@ -71,7 +70,7 @@
       }
     }
 
-    a {
+    &__btn {
       border: 1px solid $color-white-50;
       border-radius: 30px;
       padding: 5px 41px;

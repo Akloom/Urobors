@@ -97,18 +97,17 @@
   align-items: center;
   gap: 15px;
 }
-.header-buttons__language button {
-  cursor: pointer;
+.header-buttons__language-choose {
   font-weight: 400;
   font-size: 12px;
   line-height: 22px;
   color: #FFFFFF;
   transition: 0.6s all;
 }
-.header-buttons__language button:hover {
+.header-buttons__language-choose:hover {
   color: #29246A;
 }
-.header-buttons a {
+.header-buttons__btn {
   border: 1px solid #FFFFFF;
   border-radius: 30px;
   padding: 5px 41px;
@@ -118,7 +117,7 @@
   color: #FFFFFF;
   transition: 0.6s all;
 }
-.header-buttons a:hover {
+.header-buttons__btn:hover {
   background: #29246A;
   border: 1px solid #29246A;
 }
